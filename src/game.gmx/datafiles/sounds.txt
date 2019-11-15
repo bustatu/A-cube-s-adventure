@@ -1,0 +1,6 @@
+a_click
+a_hit
+apple_take_effect
+time_stop
+time_stop_reverse
+health_pick_effect
