@@ -1,5 +1,5 @@
 2.0.5 from 2.0.4 (Quality of life) (15.11.2019):
--lots of fixes and changes
+-lots of fixes and changes, getting ready for a bigger update
 
 2.0.4 from 2.0.3 (Bug Fix) (31.08.2019):
 -fixed gamepad on Android bug

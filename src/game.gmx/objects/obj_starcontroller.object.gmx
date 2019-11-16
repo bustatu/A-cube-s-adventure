@@ -101,22 +101,28 @@ else {event_user(1)}
             <string>///Destroy stars
 
 for(var i=1;i&lt;=stars[0];i++){
-    with(stars[i]){
-        instance_destroy()
+    if(instance_exists(stars[i])){
+        with(stars[i]){
+            instance_destroy()
+        }
+        stars[i]=-1 
     }
-    stars[i]=-1
 }
 for(var i=1;i&lt;=stars_1[0];i++){
-    with(stars_1[i]){
-        instance_destroy()
+    if(instance_exists(stars_1[i])){
+        with(stars_1[i]){
+            instance_destroy()
+        }
+        stars_1[i]=-1 
     }
-    stars_1[i]=-1
 }
 for(var i=1;i&lt;=stars_2[0];i++){
-    with(stars_2[i]){
-        instance_destroy()
+    if(instance_exists(stars_2[i])){
+        with(stars_2[i]){
+            instance_destroy()
+        }
+        stars_2[i]=-1 
     }
-    stars_2[i]=-1
 }
 </string>
           </argument>

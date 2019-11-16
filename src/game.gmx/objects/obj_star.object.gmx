@@ -29,6 +29,7 @@
 randomize()
 image_index=random(sprite_get_number(image_index))
 image_speed=0
+layer=0
 
 ///Coords
 ini_x=x

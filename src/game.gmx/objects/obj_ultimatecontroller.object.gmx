@@ -69,29 +69,24 @@ utimer=utimeri
             <kind>1</kind>
             <string>///Step
 if(instance_exists(obj_plr)&amp;&amp;room!=r_menu){
-    uselected=obj_gamemanager.ultimate_selected
-    switch(uselected){
-        case -1:{break;}
-        case 0:{utimeri=-1;ucooldowni=20;break;}
-        case 1:{utimeri=5;ucooldowni=5;break;}
-        case 2:{utimeri=3;ucooldowni=10;break;}
-    }
-    
-    if(oncooldown){
-        ucooldown-=delta_time/1000000
-        if(ucooldown&lt;=0){ucooldown=ucooldowni;oncooldown=false;}
-    }
-    
-    if(uactive&amp;&amp;utimeri!=-1){
-        utimer-=delta_time/1000000
-        if(utimer&lt;=0){
-            utimer=utimeri;
-            uactive=false;
-            oncooldown=true
+    if(!obj_gamemanager.sys_paused&amp;&amp;(room==r_menu||instance_exists(obj_pausebutton)&amp;&amp;!obj_pausebutton.game_paused)){
+        uselected=obj_gamemanager.ultimate_selected
+        
+        if(oncooldown){
+            ucooldown-=delta_time/1000000
+            if(ucooldown&lt;=0){ucooldown=ucooldowni;oncooldown=false;}
         }
+        
+        if(uactive&amp;&amp;utimeri!=-1){
+            utimer-=delta_time/1000000
+            if(utimer&lt;=0){
+                utimer=utimeri;
+                uactive=false;
+                oncooldown=true
+            }
+        }
+        else {utimer=utimeri}
     }
-    else {utimer=utimeri}
-    
 }
 else {uactive=false}
 </string>
@@ -143,10 +138,13 @@ event_perform(ev_create,0);
           <argument>
             <kind>1</kind>
             <string>///Draw
-
-if(uactive&amp;&amp;uselected==2){
-    draw_set_color(c_white)
-    draw_circle_width(obj_plr.x,obj_plr.y,64,3,32)
+if(instance_exists(obj_plr)&amp;&amp;room!=r_menu){
+    if(!obj_gamemanager.sys_paused&amp;&amp;(room==r_menu||instance_exists(obj_pausebutton)&amp;&amp;!obj_pausebutton.game_paused)){
+        if(uactive&amp;&amp;uselected==2){
+            draw_set_color(c_white)
+            draw_circle_width(obj_plr.x,obj_plr.y,64,3,32)
+        }
+    }
 }
 </string>
           </argument>

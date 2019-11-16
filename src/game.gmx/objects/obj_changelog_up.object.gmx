@@ -28,7 +28,8 @@
             <string>///Create
 event_inherited()
 b_c_over=c_red
-b_c=background_color
+b_c=-1
+b_f_c=-1
 b_sprite=spr_b_arrow
 b_sprite_image_index=1
 
