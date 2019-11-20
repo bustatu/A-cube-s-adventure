@@ -164,8 +164,10 @@ else {speed=0}
 if(!obj_gamemanager.sys_paused&amp;&amp;(room==r_menu||instance_exists(obj_pausebutton)&amp;&amp;!obj_pausebutton.game_paused)){
     if(target_x!=x||target_y!=y){
         draw_sprite_ext(spr_target,0,target_x,target_y,image_xscale,image_yscale,target_angle,c_white,1)
-        draw_set_color(c_red)
-        draw_line_width(x,y,target_x,target_y,target_l_width)
+        if(obj_gamemanager.debug){
+            draw_set_color(c_red)
+            draw_line_width(x,y,target_x,target_y,target_l_width)        
+        }
     }
     if(hurt&lt;=0){draw_self();hurt=0;}
     else {

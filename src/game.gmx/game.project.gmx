@@ -76,6 +76,7 @@
       <sprite>sprites\spr_camera</sprite>
       <sprite>sprites\spr_controller</sprite>
       <sprite>sprites\spr_cursor</sprite>
+      <sprite>sprites\spr_tester</sprite>
     </sprites>
     <sprites name="Game">
       <sprite>sprites\spr_plr</sprite>
@@ -94,6 +95,8 @@
         <sprite>sprites\spr_bullet</sprite>
         <sprite>sprites\spr_erocket</sprite>
       </sprites>
+      <sprite>sprites\spr_explosion</sprite>
+      <sprite>sprites\spr_bullet_effect</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\spr_slider_line</sprite>
@@ -135,6 +138,8 @@
     <shader type="GLSLES">shaders\sh_invert_color_radial.shader</shader>
     <shader type="GLSLES">shaders\sh_blend_additive.shader</shader>
     <shader type="GLSLES">shaders\sh_solid_color.shader</shader>
+    <shader type="GLSLES">shaders\sh_black_and_white.shader</shader>
+    <shader type="GLSLES">shaders\sh_gradient.shader</shader>
   </shaders>
   <fonts name="fonts">
     <font>fonts\f_1</font>
@@ -234,6 +239,7 @@
       <object>objects\obj_ebullet</object>
       <object>objects\obj_erocket</object>
       <object>objects\obj_health</object>
+      <object>objects\obj_explosion</object>
     </objects>
   </objects>
   <rooms name="rooms">
