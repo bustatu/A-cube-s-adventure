@@ -53,22 +53,21 @@
   <instances>
     <instance objName="obj_txt" x="944" y="272" name="inst_E0785DE3" locked="0" code="txt=&quot;A cube's adventure&quot;&#xA;txt_xscale=1.5&#xA;txt_yscale=1.5" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_showcasecube" x="1584" y="272" name="inst_3302B8CD" locked="0" code="" scaleX="4" scaleY="4" colour="4294967295" rotation="0"/>
-    <instance objName="obj_optionsbutton" x="736" y="800" name="inst_D4C28A4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_exitbutton" x="1520" y="944" name="inst_890DE44F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_optionsbutton" x="736" y="768" name="inst_D4C28A4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_exitbutton" x="736" y="944" name="inst_890DE44F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamemanager" x="0" y="0" name="inst_97705C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_changelogbutton" x="736" y="944" name="inst_E6B5FA63" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cursor" x="0" y="0" name="inst_712AD6B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_txt" x="1184" y="368" name="inst_366C46A1" locked="0" code="txt=version_string&#xA;txt_u=true&#xA;txt_u_w=2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_starcontroller" x="0" y="0" name="inst_E74CE6D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cspritemanager" x="0" y="0" name="inst_7B8CF174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_splashtext" x="352" y="496" name="inst_6459E3FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_ultimatecontroller" x="0" y="0" name="inst_36755600" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_statsbutton" x="1152" y="944" name="inst_9BCC01D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_statsbutton" x="1152" y="928" name="inst_9BCC01D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_statscontroller" x="0" y="0" name="inst_5FDA31E3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_statscontroller" x="0" y="0" name="inst_5572CF51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_rushbutton" x="688" y="656" name="inst_4113B0E9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_endlessbutton" x="736" y="512" name="inst_313086D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_endlessbutton" x="736" y="576" name="inst_313086D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cheatscontroller" x="0" y="0" name="inst_4E69FA7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_levelbutton" x="688" y="656" name="inst_69AE8E63" locked="0" code="instance_destroy()&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

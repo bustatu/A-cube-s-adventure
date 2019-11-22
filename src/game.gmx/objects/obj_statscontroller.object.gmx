@@ -28,14 +28,12 @@
             <string>///Create
 
 ///Stats
-stats_count=6
+stats_count=4
 stats_val[0]=0
 stats_string[0]="In-app time: "
 stats_string[1]="In-game time: "
 stats_string[2]="Hit by bullets: "
 stats_string[3]="Endless best: "
-stats_string[4]="PR max: "
-stats_string[5]="PR min: "
 stats_show_val[0]=string(stats_val[0])
 for(var i=0;i&lt;stats_count;i++){
     stats_val[i]=0

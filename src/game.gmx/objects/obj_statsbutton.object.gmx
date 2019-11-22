@@ -28,14 +28,15 @@
             <string>///Create
 
 event_inherited()
-b_w=125
-b_h=125
+b_w=128
+b_h=128
 b_border=5
 b_sprite=spr_button_icons
 b_sprite_image_index=1
-b_sprite_image_xscale=0.9
-b_sprite_image_yscale=0.9
-b_c=c_white
+b_sprite_image_xscale=1
+b_sprite_image_yscale=1
+b_c=-1
+b_spr_c_over=c_red
 </string>
           </argument>
         </arguments>

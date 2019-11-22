@@ -68,7 +68,7 @@ if(place_meeting(x,y,obj_wall)){
 if(place_meeting(x,y,obj_plr)){
     instance_destroy()
     instance_create(x,y,obj_explosion)
-    endless_hit()
+    endless_hit(7)
 }
 if(!obj_gamemanager.sys_paused&amp;&amp;!obj_pausebutton.game_paused&amp;&amp;get_active_ult()!=0){
     life-=delta_time/1000000

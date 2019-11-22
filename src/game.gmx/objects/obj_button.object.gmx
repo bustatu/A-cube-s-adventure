@@ -51,6 +51,8 @@ txt_inst.txt_color=b_txt_c
 txt_inst.txt_font=b_txt_font
 txt_inst.txt_xscale=b_txt_xscale
 txt_inst.txt_yscale=b_txt_yscale
+b_spr_c=c_white
+b_spr_c_over=c_white
 </string>
           </argument>
         </arguments>
@@ -162,9 +164,10 @@ if(!obj_gamemanager.sys_paused){
         draw_set_color(b_f_c)
         draw_rectangle(x+b_border,y+b_border,x+b_w-b_border,y+b_h-b_border,false)    
     }
-    draw_set_color(c_white)
     if(b_sprite!=-1){
-        draw_sprite_ext(b_sprite,b_sprite_image_index,x+b_w/2,y+b_h/2,b_sprite_image_xscale*(x+b_w-b_border-x+b_border)/sprite_get_width(b_sprite),b_sprite_image_yscale*(y+b_h-b_border-y+b_border)/sprite_get_height(b_sprite),0,c_white,1)
+        if(!over){draw_set_color(b_spr_c)}
+        else {draw_set_color(b_spr_c_over)}
+        draw_sprite_ext(b_sprite,b_sprite_image_index,x+b_w/2,y+b_h/2,b_sprite_image_xscale*(x+b_w-b_border-x+b_border)/sprite_get_width(b_sprite),b_sprite_image_yscale*(y+b_h-b_border-y+b_border)/sprite_get_height(b_sprite),0,draw_get_color(),1)
     }
 }
 </string>
