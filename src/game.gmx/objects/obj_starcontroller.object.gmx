@@ -61,14 +61,20 @@ if(room!=r_endless&amp;&amp;room!=r_prush){
         event_user(0)
     }
     
-    delay_x=room_width/2-x
-    delay_y=room_height/2-y
-    
-    if(distance_to_point(obj_cursor.x,obj_cursor.y)&lt;=delay_speed*delta_time/1000000){
-        x=obj_cursor.x
-        y=obj_cursor.y
+    if(os_type==os_windows){
+        delay_x=room_width/2-x
+        delay_y=room_height/2-y
+        
+        if(distance_to_point(obj_cursor.x,obj_cursor.y)&lt;=delay_speed*delta_time/1000000){
+            x=obj_cursor.x
+            y=obj_cursor.y
+        }
+        else {move_towards_point(obj_cursor.x,obj_cursor.y,delay_speed*delta_time/1000000)}
     }
-    else {move_towards_point(obj_cursor.x,obj_cursor.y,delay_speed*delta_time/1000000)}
+    else {
+        delay_x=room_width/2-obj_cursor.x
+        delay_y=room_height/2-obj_cursor.y
+    }
 
     for(var i=1;i&lt;=stars[0];i++){
         stars[i].x=stars[i].ini_x-delay_x*0.5
