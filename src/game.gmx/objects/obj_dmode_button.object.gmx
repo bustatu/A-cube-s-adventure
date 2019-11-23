@@ -31,7 +31,7 @@ b_w=300
 b_h=125
 b_txt="NATIVE"
 b_c=c_white
-b_border=5
+b_border=0
 </string>
           </argument>
         </arguments>

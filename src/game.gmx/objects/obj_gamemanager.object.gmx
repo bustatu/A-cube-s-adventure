@@ -150,6 +150,13 @@ if(os_type!=os_android){
     }
 }
 
+if(room==r_endless){
+    randomize()
+    if(random(100)&lt;=0.001){
+        instance_create(0,0,obj_box)
+    }
+}
+
 </string>
           </argument>
         </arguments>

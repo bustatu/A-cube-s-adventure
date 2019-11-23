@@ -39,6 +39,10 @@ while(!file_text_eof(file)){
     }
 }
 file_text_close(file)
+
+audio_sound_gain(sounds[3],1.5,0)
+audio_sound_gain(sounds[4],1.5,0)
+audio_sound_gain(sounds[7],1.5,0)
 </string>
           </argument>
         </arguments>
@@ -91,6 +95,25 @@ for(var i=1;i&lt;=sounds[0];i++){
     if(!audio_is_playing(sounds[i])){
         playing[i]=-1
     }
+}
+
+if(!playing[8]&amp;&amp;room!=r_endless){
+    play_sound_id(8,false)
+}
+else if(playing[8]&amp;&amp;room==r_endless){
+    stop_sound_id(8)
+}
+if(!playing[9]&amp;&amp;room==r_endless){
+    play_sound_id(9,false)
+}
+else if(playing[9]&amp;&amp;room!=r_endless){
+    stop_sound_id(9)
+}
+if(room==r_endless&amp;&amp;instance_exists(obj_timestop)){
+    audio_sound_pitch(sounds[9],0.3);
+}
+else {
+    audio_sound_pitch(sounds[9],1);
 }
 </string>
           </argument>

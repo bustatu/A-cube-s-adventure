@@ -53,8 +53,8 @@
   <instances>
     <instance objName="obj_boptionsbutton" x="1520" y="944" name="inst_1A06ACFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_txt" x="192" y="112" name="inst_2BC978C4" locked="0" code="txt=&quot;AUDIO&quot;&#xA;txt_xscale=1.5&#xA;txt_yscale=1.5&#xA;txt_u=true&#xA;txt_u_w=3" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_txt" x="432" y="272" name="inst_0D7946CA" locked="0" code="txt=&quot;Disable all sounds&quot;&#xA;txt_xscale=1.25&#xA;txt_yscale=1.25&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_soundcheckbox" x="784" y="208" name="inst_786C07F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_txt" x="448" y="272" name="inst_0D7946CA" locked="0" code="txt=&quot;Disable all sounds&quot;&#xA;txt_xscale=1.25&#xA;txt_yscale=1.25&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_soundcheckbox" x="928" y="224" name="inst_786C07F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

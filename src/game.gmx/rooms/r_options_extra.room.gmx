@@ -58,6 +58,8 @@
     <instance objName="obj_txt" x="288" y="432" name="inst_7269C73B" locked="0" code="txt=&quot;STAR DENSITY&quot;&#xA;txt_xscale=1&#xA;txt_yscale=1&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_starslide" x="752" y="432" name="inst_3EBB5F7F" locked="0" code="" scaleX="20" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="obj_b_resetdata" x="1216" y="48" name="inst_81DC6703" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_txt" x="512" y="1008" name="inst_D53A8F34" locked="0" code="txt=&quot;This game was made by Boostatu and is avaliable on:&quot;&#xA;txt_xscale=0.5&#xA;txt_yscale=0.5&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_itchbutton" x="1072" y="1008" name="inst_8E18232D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

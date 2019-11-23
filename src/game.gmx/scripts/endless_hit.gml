@@ -1,6 +1,6 @@
 ///endless_hit(sound_id) - hit in endless mode
 
-if(!(obj_ultimatecontroller.uselected==2&&obj_ultimatecontroller.uactive)){
+if(!(obj_ultimatecontroller.uselected==2&&obj_ultimatecontroller.uactive)&&!obj_plr.type==1){
     if(room==r_endless){
         obj_endlesscontroller.live--
     }

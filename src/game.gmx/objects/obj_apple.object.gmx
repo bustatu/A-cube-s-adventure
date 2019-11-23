@@ -53,7 +53,7 @@ image_yscale=1.5
             <string>///Destroy
 randomize()
 instance_create(random(room_width-16),random(room_height-16),obj_apple)
-obj_menuplr.trail.trail_limit+=5
+obj_menuplr.trail.trail_limit+=2
 </string>
           </argument>
         </arguments>

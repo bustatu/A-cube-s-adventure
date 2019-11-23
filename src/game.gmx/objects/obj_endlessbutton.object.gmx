@@ -29,7 +29,7 @@
 event_inherited()
 b_w=350
 b_h=125
-b_txt="ENDLESS"
+b_txt="PLAY"
 b_f_c=-1
 b_c=-1
 b_border=5

@@ -679,7 +679,7 @@
   </Options>
   <ConfigConstants>
     <constants number="1">
-      <constant name="version_string">"v 2.1.0 release"</constant>
+      <constant name="version_string">"v 2.1.0 definitive"</constant>
     </constants>
   </ConfigConstants>
 </Config>

@@ -5,3 +5,5 @@ time_stop
 time_stop_reverse
 health_pick_effect
 snd_rocket_explosion
+snd_menu_song
+snd_endless_song

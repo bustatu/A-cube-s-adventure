@@ -140,7 +140,7 @@ event_perform(ev_create,0);
             <string>///Draw
 if(instance_exists(obj_plr)&amp;&amp;room!=r_menu){
     if(!obj_gamemanager.sys_paused&amp;&amp;(room==r_menu||instance_exists(obj_pausebutton)&amp;&amp;!obj_pausebutton.game_paused)){
-        if(uactive&amp;&amp;uselected==2){
+        if(uactive&amp;&amp;uselected==2||obj_plr.type==1){
             draw_set_color(c_white)
             draw_circle_width(obj_plr.x,obj_plr.y,64,3,32)
         }

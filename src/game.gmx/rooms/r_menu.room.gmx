@@ -57,7 +57,7 @@
     <instance objName="obj_exitbutton" x="736" y="944" name="inst_890DE44F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_gamemanager" x="0" y="0" name="inst_97705C0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cursor" x="0" y="0" name="inst_712AD6B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_txt" x="1184" y="368" name="inst_366C46A1" locked="0" code="txt=version_string&#xA;txt_u=true&#xA;txt_u_w=2&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_txt" x="1184" y="368" name="inst_366C46A1" locked="0" code="txt=version_string&#xA;txt_u=true&#xA;txt_u_w=2" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_starcontroller" x="0" y="0" name="inst_E74CE6D5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_cspritemanager" x="0" y="0" name="inst_7B8CF174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_splashtext" x="352" y="496" name="inst_6459E3FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

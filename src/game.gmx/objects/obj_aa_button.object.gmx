@@ -28,7 +28,7 @@
             <string>///Create
 event_inherited()
 b_txt="0"
-b_border=5
+b_border=0
 
 </string>
           </argument>

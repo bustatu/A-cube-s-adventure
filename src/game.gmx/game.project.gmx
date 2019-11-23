@@ -52,6 +52,8 @@
     <sound>sound\time_stop_reverse</sound>
     <sound>sound\health_pick_effect</sound>
     <sound>sound\snd_rocket_explosion</sound>
+    <sound>sound\snd_menu_song</sound>
+    <sound>sound\snd_endless_song</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="System">
@@ -81,6 +83,8 @@
       </sprites>
       <sprite>sprites\spr_explosion</sprite>
       <sprite>sprites\spr_bullet_effect</sprite>
+      <sprite>sprites\spr_ultimates_before</sprite>
+      <sprite>sprites\spr_box</sprite>
     </sprites>
     <sprites name="GUI">
       <sprite>sprites\spr_slider_line</sprite>
@@ -89,6 +93,7 @@
       <sprite>sprites\spr_b_arrow</sprite>
       <sprite>sprites\spr_button_icons</sprite>
       <sprite>sprites\spr_pause_button</sprite>
+      <sprite>sprites\spr_itch</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -178,6 +183,7 @@
           <object>objects\obj_splashtext</object>
         </objects>
         <object>objects\obj_levelbutton</object>
+        <object>objects\obj_itchbutton</object>
       </objects>
       <objects name="Endless">
         <object>objects\obj_resetbutton</object>
@@ -224,6 +230,7 @@
       <object>objects\obj_erocket</object>
       <object>objects\obj_health</object>
       <object>objects\obj_explosion</object>
+      <object>objects\obj_box</object>
     </objects>
   </objects>
   <rooms name="rooms">
