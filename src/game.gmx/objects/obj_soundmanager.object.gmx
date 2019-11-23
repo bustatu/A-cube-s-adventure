@@ -40,9 +40,13 @@ while(!file_text_eof(file)){
 }
 file_text_close(file)
 
+ini_open("settings.ini")
+musicdisabled=ini_read_real("settings","music_disabled",false)
+ini_close()
+
 audio_sound_gain(sounds[3],1.5,0)
 audio_sound_gain(sounds[4],1.5,0)
-audio_sound_gain(sounds[7],1.5,0)
+audio_sound_gain(sounds[7],1,0)
 </string>
           </argument>
         </arguments>
@@ -96,19 +100,22 @@ for(var i=1;i&lt;=sounds[0];i++){
         playing[i]=-1
     }
 }
+if(!musicdisabled){
+    if(!playing[8]&amp;&amp;room!=r_endless){
+        play_sound_id(8,false)
+    }
+    else if(playing[8]&amp;&amp;room==r_endless){
+        stop_sound_id(8)
+    }
+    if(!playing[9]&amp;&amp;room==r_endless){
+        play_sound_id(9,false)
+    }
+    else if(playing[9]&amp;&amp;room!=r_endless){
+        stop_sound_id(9)
+    }
+}
+else {stop_sound_id(9)stop_sound_id(8)}
 
-if(!playing[8]&amp;&amp;room!=r_endless){
-    play_sound_id(8,false)
-}
-else if(playing[8]&amp;&amp;room==r_endless){
-    stop_sound_id(8)
-}
-if(!playing[9]&amp;&amp;room==r_endless){
-    play_sound_id(9,false)
-}
-else if(playing[9]&amp;&amp;room!=r_endless){
-    stop_sound_id(9)
-}
 if(room==r_endless&amp;&amp;instance_exists(obj_timestop)){
     audio_sound_pitch(sounds[9],0.3);
 }

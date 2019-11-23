@@ -10,6 +10,7 @@ ini_write_real("settings","display_mode",obj_gamemanager.display_mode)
 ini_write_real("settings","ultimate_selected",obj_gamemanager.ultimate_selected)
 ini_write_real("settings","rendering_scale",obj_gamemanager.rendering_scale)
 ini_write_real("settings","audio_disabled",obj_gamemanager.audio_disabled)
+ini_write_real("settings","music_disabled",obj_soundmanager.musicdisabled)
 ini_close()
 
 

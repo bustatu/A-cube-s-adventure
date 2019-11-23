@@ -213,6 +213,7 @@
         </objects>
         <objects name="Audio">
           <object>objects\obj_soundcheckbox</object>
+          <object>objects\obj_musiccheckbox</object>
         </objects>
       </objects>
       <objects name="Changelog">
